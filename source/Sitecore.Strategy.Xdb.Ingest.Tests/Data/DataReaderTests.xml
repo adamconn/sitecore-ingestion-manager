@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<data>
+  <querystring>
+    <data><![CDATA[company_size=fortune_500&functional_area=consultant&functional_area=finance&functional_area=finance_accounting&group=business_professional&group=financial_professional&group=high_net_worth&industry=accounting_and_accounting_services&industry=agriculture&industry=agriculture_animals_and_livestock&industry=business_services&location=oregon&seniority=board_member]]></data>
+    <keycount>6</keycount>
+    <valuecount>13</valuecount>
+  </querystring>
+  <xmlresponse>
+    <file>Data\TaxonomyResponseData.xml</file>
+    <check1><![CDATA[boolean(/result/taxonomy/version)]]></check1>
+    <check2><![CDATA[contains(/result/taxonomy/version, '20110824')]]></check2>
+  </xmlresponse>
+</data>

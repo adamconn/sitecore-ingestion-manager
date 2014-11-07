@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Strategy.Xdb.Ingest", "Sitecore.Strategy.Xdb.Ingest\Sitecore.Strategy.Xdb.Ingest.csproj", "{DD7F4CFC-1E8E-4B27-9AF8-2422F0EFC469}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Strategy.Xdb.Ingest.Bizo", "Sitecore.Strategy.Xdb.Ingest.Bizo\Sitecore.Strategy.Xdb.Ingest.Bizo.csproj", "{D63C20FD-866D-44A3-B3AF-005B0425AF72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Strategy.Xdb.Ingest.Tests", "Sitecore.Strategy.Xdb.Ingest.Tests\Sitecore.Strategy.Xdb.Ingest.Tests.csproj", "{D8C8ACF6-ABD1-451F-A9B0-743CF0B5F3DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Strategy.Contacts", "..\Sitecore.Strategy.Contacts\Sitecore.Strategy.Contacts\Sitecore.Strategy.Contacts.csproj", "{01946754-56F6-438F-92BB-FAD19C054D30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Strategy.Xdb.Ingest.Demandbase", "Sitecore.Strategy.Xdb.Ingest.Demandbase\Sitecore.Strategy.Xdb.Ingest.Demandbase.csproj", "{538A4565-DCBC-4799-A200-F1F1D6A862C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Strategy.Xdb.Ingest.Samples", "Sitecore.Strategy.Xdb.Ingest.Samples\Sitecore.Strategy.Xdb.Ingest.Samples.csproj", "{582E0DBD-4030-41B1-8D0A-8A4E9AA3C358}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD7F4CFC-1E8E-4B27-9AF8-2422F0EFC469}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD7F4CFC-1E8E-4B27-9AF8-2422F0EFC469}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD7F4CFC-1E8E-4B27-9AF8-2422F0EFC469}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD7F4CFC-1E8E-4B27-9AF8-2422F0EFC469}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D63C20FD-866D-44A3-B3AF-005B0425AF72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D63C20FD-866D-44A3-B3AF-005B0425AF72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D63C20FD-866D-44A3-B3AF-005B0425AF72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D63C20FD-866D-44A3-B3AF-005B0425AF72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8C8ACF6-ABD1-451F-A9B0-743CF0B5F3DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8C8ACF6-ABD1-451F-A9B0-743CF0B5F3DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8C8ACF6-ABD1-451F-A9B0-743CF0B5F3DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8C8ACF6-ABD1-451F-A9B0-743CF0B5F3DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01946754-56F6-438F-92BB-FAD19C054D30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01946754-56F6-438F-92BB-FAD19C054D30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01946754-56F6-438F-92BB-FAD19C054D30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01946754-56F6-438F-92BB-FAD19C054D30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{538A4565-DCBC-4799-A200-F1F1D6A862C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{538A4565-DCBC-4799-A200-F1F1D6A862C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{538A4565-DCBC-4799-A200-F1F1D6A862C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{538A4565-DCBC-4799-A200-F1F1D6A862C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{582E0DBD-4030-41B1-8D0A-8A4E9AA3C358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{582E0DBD-4030-41B1-8D0A-8A4E9AA3C358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{582E0DBD-4030-41B1-8D0A-8A4E9AA3C358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{582E0DBD-4030-41B1-8D0A-8A4E9AA3C358}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

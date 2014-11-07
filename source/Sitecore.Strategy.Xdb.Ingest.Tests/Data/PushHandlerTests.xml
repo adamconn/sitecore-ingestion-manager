@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<data>
+  <pushUrl>
+    <url>http://tempuri.org</url>
+    <expectedHandler></expectedHandler>
+  </pushUrl>
+  <pushUrl>
+    <url>http://tempuri.org/</url>
+    <expectedHandler></expectedHandler>
+  </pushUrl>
+  <pushUrl>
+    <url><![CDATA[http://tempuri.org/personal]]></url>
+    <expectedHandler>personal</expectedHandler>
+  </pushUrl>
+  <pushUrl>
+    <url><![CDATA[http://tempuri.org/personal/]]></url>
+    <expectedHandler>personal</expectedHandler>
+  </pushUrl>
+  <pushUrl>
+    <url><![CDATA[http://tempuri.org/-/personal]]></url>
+    <expectedHandler>personal</expectedHandler>
+  </pushUrl>
+  <pushUrl>
+    <url><![CDATA[http://tempuri.org/-/personal/]]></url>
+    <expectedHandler>personal</expectedHandler>
+  </pushUrl>
+  <pushUrl>
+    <url><![CDATA[http://tempuri.org/-/personal?param1]]></url>
+    <expectedHandler>personal</expectedHandler>
+  </pushUrl>
+  <pushUrl>
+    <url><![CDATA[http://tempuri.org/-/personal?param1=1]]></url>
+    <expectedHandler>personal</expectedHandler>
+  </pushUrl>
+  <pushUrl>
+    <url><![CDATA[http://tempuri.org/-/personal?param1=1&param2=2]]></url>
+    <expectedHandler>personal</expectedHandler>
+  </pushUrl>
+</data>

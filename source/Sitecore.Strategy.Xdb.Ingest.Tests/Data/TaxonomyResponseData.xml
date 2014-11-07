@@ -1,0 +1,1487 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<result>
+  <taxonomy>
+    <version>20110824</version>
+    <bizographics>
+      <company_size>
+        <segment>
+          <code>fortune_500</code>
+          <name>F500</name>
+        </segment>
+        <segment>
+          <code>large</code>
+          <name>Large (1001-5000)</name>
+        </segment>
+        <segment>
+          <code>medium</code>
+          <name>Medium (101-500)</name>
+        </segment>
+        <segment>
+          <code>medium_large</code>
+          <name>Medium-Large (501-1000)</name>
+        </segment>
+        <segment>
+          <code>micro</code>
+          <name>Micro (1-20)</name>
+        </segment>
+        <segment>
+          <code>small</code>
+          <name>Small (21-100)</name>
+        </segment>
+        <segment>
+          <code>xlarge</code>
+          <name>XLarge (5000+)</name>
+        </segment>
+      </company_size>
+      <functional_area>
+        <segment>
+          <code>consultant</code>
+          <name>Consultants</name>
+        </segment>
+        <segment>
+          <code>csuite</code>
+          <name>C-Suite</name>
+        </segment>
+        <segment>
+          <code>education</code>
+          <name>Education</name>
+        </segment>
+        <segment>
+          <code>education_management</code>
+          <name>Education/Management</name>
+          <parent-code>education</parent-code>
+        </segment>
+        <segment>
+          <code>education_professor</code>
+          <name>Education/Professor</name>
+          <parent-code>education</parent-code>
+        </segment>
+        <segment>
+          <code>education_student</code>
+          <name>Education/Student</name>
+          <parent-code>education</parent-code>
+        </segment>
+        <segment>
+          <code>engineering_biomechanical</code>
+          <name>Engineering Biomedical and Biomechanical</name>
+          <parent-code>engineering_technical</parent-code>
+        </segment>
+        <segment>
+          <code>engineering_chemical</code>
+          <name>Engineering Chemical</name>
+          <parent-code>engineering_technical</parent-code>
+        </segment>
+        <segment>
+          <code>engineering_civil</code>
+          <name>Engineering Civil</name>
+          <parent-code>engineering_technical</parent-code>
+        </segment>
+        <segment>
+          <code>engineering_electrical</code>
+          <name>Engineering Electrical</name>
+          <parent-code>engineering_technical</parent-code>
+        </segment>
+        <segment>
+          <code>engineering_electronics</code>
+          <name>Engineering Electronics</name>
+          <parent-code>engineering_technical</parent-code>
+        </segment>
+        <segment>
+          <code>engineering_industrial</code>
+          <name>Engineering Manufacturing and Industrial</name>
+          <parent-code>engineering_technical</parent-code>
+        </segment>
+        <segment>
+          <code>engineering_mechanical</code>
+          <name>Engineering Mechanical</name>
+          <parent-code>engineering_technical</parent-code>
+        </segment>
+        <segment>
+          <code>engineering_technical</code>
+          <name>Engineering/Technical</name>
+        </segment>
+        <segment>
+          <code>finance</code>
+          <name>Finance</name>
+        </segment>
+        <segment>
+          <code>finance_accounting</code>
+          <name>Accounting</name>
+          <parent-code>finance</parent-code>
+        </segment>
+        <segment>
+          <code>finance_banking</code>
+          <name>Banking</name>
+          <parent-code>finance</parent-code>
+        </segment>
+        <segment>
+          <code>finance_investment_banking</code>
+          <name>Investment Banking</name>
+          <parent-code>finance</parent-code>
+        </segment>
+        <segment>
+          <code>finance_wealth_management</code>
+          <name>Wealth Management</name>
+          <parent-code>finance</parent-code>
+        </segment>
+        <segment>
+          <code>gov_elected_officials</code>
+          <name>Govt Elected Officials</name>
+          <parent-code>government</parent-code>
+        </segment>
+        <segment>
+          <code>gov_employees</code>
+          <name>Govt Employees</name>
+          <parent-code>government</parent-code>
+        </segment>
+        <segment>
+          <code>government</code>
+          <name>Govt</name>
+        </segment>
+        <segment>
+          <code>hr</code>
+          <name>HR</name>
+        </segment>
+        <segment>
+          <code>hr_benefits_comp</code>
+          <name>HR Benefits Comp</name>
+          <parent-code>hr</parent-code>
+        </segment>
+        <segment>
+          <code>hr_diversity</code>
+          <name>HR Diversity</name>
+          <parent-code>hr</parent-code>
+        </segment>
+        <segment>
+          <code>hr_generalist</code>
+          <name>HR Generalist</name>
+          <parent-code>hr</parent-code>
+        </segment>
+        <segment>
+          <code>hr_recruiting</code>
+          <name>HR Recruiting</name>
+          <parent-code>hr</parent-code>
+        </segment>
+        <segment>
+          <code>information_technology</code>
+          <name>Information Technology</name>
+        </segment>
+        <segment>
+          <code>it_database</code>
+          <name>IT Database</name>
+          <parent-code>information_technology</parent-code>
+        </segment>
+        <segment>
+          <code>it_hardware</code>
+          <name>IT Hardware</name>
+          <parent-code>information_technology</parent-code>
+        </segment>
+        <segment>
+          <code>it_operations</code>
+          <name>IT Operations</name>
+          <parent-code>information_technology</parent-code>
+        </segment>
+        <segment>
+          <code>it_qa</code>
+          <name>IT QA</name>
+          <parent-code>information_technology</parent-code>
+        </segment>
+        <segment>
+          <code>it_software</code>
+          <name>IT Software</name>
+          <parent-code>information_technology</parent-code>
+        </segment>
+        <segment>
+          <code>it_systems_analysts</code>
+          <name>IT Systems and Business Analysts</name>
+          <parent-code>information_technology</parent-code>
+        </segment>
+        <segment>
+          <code>it_web_development</code>
+          <name>IT Web Development</name>
+          <parent-code>information_technology</parent-code>
+        </segment>
+        <segment>
+          <code>legal</code>
+          <name>Legal</name>
+        </segment>
+        <segment>
+          <code>marketing</code>
+          <name>Marketing</name>
+        </segment>
+        <segment>
+          <code>marketing_advertising</code>
+          <name>Marketing &amp; Advertising</name>
+          <parent-code>marketing</parent-code>
+        </segment>
+        <segment>
+          <code>marketing_branding</code>
+          <name>Marketing &amp; Branding</name>
+          <parent-code>marketing</parent-code>
+        </segment>
+        <segment>
+          <code>marketing_creative</code>
+          <name>Marketing Creative</name>
+          <parent-code>marketing</parent-code>
+        </segment>
+        <segment>
+          <code>marketing_media_buyers</code>
+          <name>Marketing Media Buyers</name>
+          <parent-code>marketing</parent-code>
+        </segment>
+        <segment>
+          <code>marketing_pr</code>
+          <name>Marketing &amp; PR</name>
+          <parent-code>marketing</parent-code>
+        </segment>
+        <segment>
+          <code>marketing_product</code>
+          <name>Marketing Product</name>
+          <parent-code>marketing</parent-code>
+        </segment>
+        <segment>
+          <code>marketing_research</code>
+          <name>Marketing Research</name>
+          <parent-code>marketing</parent-code>
+        </segment>
+        <segment>
+          <code>medical_dentist</code>
+          <name>Medical Dentist</name>
+          <parent-code>medical_health</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor</code>
+          <name>Medical Doctor</name>
+          <parent-code>medical_health</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_adolescent_medicine</code>
+          <name>Medical Adolescent Medicine</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_allergies_immunology</code>
+          <name>Medical Allergies &amp; Immunology</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_alternative</code>
+          <name>Medical Integrative Alternative &amp; Complimentary Medicine</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_anesthesiology</code>
+          <name>Medical Anethesiology</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_cardiology</code>
+          <name>Medical Cardiology</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_clinical_lab</code>
+          <name>Medical Clinical Laboratory</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_cosmetic</code>
+          <name>Medical Cosmetic</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_critical_care</code>
+          <name>Medical Critical Care Medicine</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_dermatology</code>
+          <name>Medical Dermatology</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_emergency</code>
+          <name>Medical Emergency Medicine</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_endocrinology</code>
+          <name>Medical Endocrinology</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_gastroenterology</code>
+          <name>Medical Gastroenterology</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_general_or_family_practitioner</code>
+          <name>Medical General/Family Practitioner</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_genetics</code>
+          <name>Medical Genetics</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_geriatrics</code>
+          <name>Medical Geriatrics</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_hematology</code>
+          <name>Medical Hematology</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_hepatology</code>
+          <name>Medical Hepatology</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_imaging_radiology</code>
+          <name>Medical Imaging &amp; Radiology</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_infectious_disease</code>
+          <name>Medical Infectious Disease</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_internal_medicine</code>
+          <name>Medical Internal Medicine</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_nephrology</code>
+          <name>Medical Nephrology</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_neurology</code>
+          <name>Medical Neurology</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_ob_gyn</code>
+          <name>Medical Ob/Gyn</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_oncology</code>
+          <name>Medical Oncology</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_ophthalmology</code>
+          <name>Medical Ophthalmology</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_orthopedic</code>
+          <name>Medical Orthopedic</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_otolaryngology</code>
+          <name>Medical Ontolaryngology</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_pathology</code>
+          <name>Medical Pathology</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_pediatrics</code>
+          <name>Medical Pediatrics &amp; Adolescent Medicine</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_phlebology</code>
+          <name>Medical Phlebology</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_physical_medicine_rehab</code>
+          <name>Medical Physical Medicine &amp; Rehabilitation</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_psychiatry_mental_health</code>
+          <name>Medical Psychiatry &amp; Mental Health</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_pulmonology</code>
+          <name>Medical Pulmonology</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_rheumatology</code>
+          <name>Medical Rheumatology</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_sports_medicine</code>
+          <name>Medical Sports Medicine</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_surgery</code>
+          <name>Medical Surgeon</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_doctor_urology</code>
+          <name>Medical Urology</name>
+          <parent-code>medical_doctor</parent-code>
+        </segment>
+        <segment>
+          <code>medical_health</code>
+          <name>Medical/Health</name>
+        </segment>
+        <segment>
+          <code>medical_health_professionals</code>
+          <name>Medical Health Professional</name>
+          <parent-code>medical_health</parent-code>
+        </segment>
+        <segment>
+          <code>medical_pharmacist</code>
+          <name>Medical Pharmacists</name>
+          <parent-code>medical_health</parent-code>
+        </segment>
+        <segment>
+          <code>medical_physician_assistant</code>
+          <name>Medical Physician Assistant</name>
+          <parent-code>medical_health</parent-code>
+        </segment>
+        <segment>
+          <code>nurse</code>
+          <name>Nurse</name>
+          <parent-code>medical_health</parent-code>
+        </segment>
+        <segment>
+          <code>operations</code>
+          <name>Operations</name>
+        </segment>
+        <segment>
+          <code>operations_admin</code>
+          <name>Ops Administration</name>
+          <parent-code>operations</parent-code>
+        </segment>
+        <segment>
+          <code>ops_buyers</code>
+          <name>Ops Buyers and Purchasers</name>
+          <parent-code>operations</parent-code>
+        </segment>
+        <segment>
+          <code>ops_change_management</code>
+          <name>Ops Change Mgmt</name>
+          <parent-code>operations</parent-code>
+        </segment>
+        <segment>
+          <code>ops_compliance</code>
+          <name>Ops Compliance</name>
+          <parent-code>operations</parent-code>
+        </segment>
+        <segment>
+          <code>ops_customer_relations</code>
+          <name>Ops Customer Relations</name>
+          <parent-code>operations</parent-code>
+        </segment>
+        <segment>
+          <code>ops_facilities</code>
+          <name>Ops Facilities</name>
+          <parent-code>operations</parent-code>
+        </segment>
+        <segment>
+          <code>ops_logistics</code>
+          <name>Ops Logistics</name>
+          <parent-code>operations</parent-code>
+        </segment>
+        <segment>
+          <code>religious</code>
+          <name>Religious</name>
+        </segment>
+        <segment>
+          <code>sales</code>
+          <name>Sales</name>
+        </segment>
+        <segment>
+          <code>sales_account_management</code>
+          <name>Sales Account Mgmt</name>
+          <parent-code>sales</parent-code>
+        </segment>
+        <segment>
+          <code>sales_business_development</code>
+          <name>Sales Biz Dev</name>
+          <parent-code>sales</parent-code>
+        </segment>
+        <segment>
+          <code>sales_support</code>
+          <name>Sales Support</name>
+          <parent-code>sales</parent-code>
+        </segment>
+        <segment>
+          <code>scientist</code>
+          <name>Scientists</name>
+        </segment>
+      </functional_area>
+      <gender>
+        <segment>
+          <code>female</code>
+          <name>Female</name>
+        </segment>
+        <segment>
+          <code>male</code>
+          <name>Male</name>
+        </segment>
+      </gender>
+      <group>
+        <segment>
+          <code>business_professional</code>
+          <name>Business Professional</name>
+        </segment>
+        <segment>
+          <code>financial_professional</code>
+          <name>Financial Business Professional</name>
+        </segment>
+        <segment>
+          <code>high_net_worth</code>
+          <name>High Net Worth</name>
+        </segment>
+        <segment>
+          <code>small_business_professional</code>
+          <name>Small Business Professional</name>
+        </segment>
+        <segment>
+          <code>tech_business_professional</code>
+          <name>Tech Business Professional</name>
+        </segment>
+      </group>
+      <industry>
+        <segment>
+          <code>accounting_and_accounting_services</code>
+          <name>Accounting &amp; Accounting Services</name>
+          <parent-code>business_services</parent-code>
+        </segment>
+        <segment>
+          <code>advertising_and_marketing</code>
+          <name>Advertising &amp; Marketing</name>
+          <parent-code>business_services</parent-code>
+        </segment>
+        <segment>
+          <code>agriculture</code>
+          <name>Agriculture</name>
+        </segment>
+        <segment>
+          <code>agriculture_animals_and_livestock</code>
+          <name>Animals &amp; Livestock</name>
+          <parent-code>agriculture</parent-code>
+        </segment>
+        <segment>
+          <code>agriculture_crops</code>
+          <name>Crops</name>
+          <parent-code>agriculture</parent-code>
+        </segment>
+        <segment>
+          <code>agriculture_forestry</code>
+          <name>Forestry</name>
+          <parent-code>agriculture</parent-code>
+        </segment>
+        <segment>
+          <code>architecture</code>
+          <name>Architecture</name>
+          <parent-code>construction</parent-code>
+        </segment>
+        <segment>
+          <code>business_services</code>
+          <name>Business Services</name>
+        </segment>
+        <segment>
+          <code>commercial_printing</code>
+          <name>Commercial Printing</name>
+          <parent-code>business_services</parent-code>
+        </segment>
+        <segment>
+          <code>construction</code>
+          <name>Construction</name>
+        </segment>
+        <segment>
+          <code>construction_commercial_building</code>
+          <name>Construction Commercial Bldg</name>
+          <parent-code>construction</parent-code>
+        </segment>
+        <segment>
+          <code>construction_contractors</code>
+          <name>Contractors</name>
+          <parent-code>construction</parent-code>
+        </segment>
+        <segment>
+          <code>construction_heavy_construction</code>
+          <name>Heavy Construction</name>
+          <parent-code>construction</parent-code>
+        </segment>
+        <segment>
+          <code>construction_residential_building</code>
+          <name>Construction Residential Bldg</name>
+          <parent-code>construction</parent-code>
+        </segment>
+        <segment>
+          <code>consulting</code>
+          <name>Management Consulting</name>
+          <parent-code>business_services</parent-code>
+        </segment>
+        <segment>
+          <code>consumer_automotive_repair</code>
+          <name>Consumer Auto Repair</name>
+          <parent-code>consumer_services</parent-code>
+        </segment>
+        <segment>
+          <code>consumer_car_rental</code>
+          <name>Car Rental</name>
+          <parent-code>consumer_services</parent-code>
+        </segment>
+        <segment>
+          <code>consumer_hair_salons</code>
+          <name>Hair Salons</name>
+          <parent-code>consumer_services</parent-code>
+        </segment>
+        <segment>
+          <code>consumer_laundry_dry_cleaning</code>
+          <name>Laundry Dry Cleaning</name>
+          <parent-code>consumer_services</parent-code>
+        </segment>
+        <segment>
+          <code>consumer_non_auto_repair</code>
+          <name>Non-Auto Repair</name>
+          <parent-code>consumer_services</parent-code>
+        </segment>
+        <segment>
+          <code>consumer_services</code>
+          <name>Consumer Services</name>
+        </segment>
+        <segment>
+          <code>consumer_veterinary</code>
+          <name>Veterinary</name>
+          <parent-code>consumer_services</parent-code>
+        </segment>
+        <segment>
+          <code>consumer_weight_health_management</code>
+          <name>Consumer Weight Health Management</name>
+          <parent-code>consumer_services</parent-code>
+        </segment>
+        <segment>
+          <code>cultural</code>
+          <name>Cultural</name>
+        </segment>
+        <segment>
+          <code>cultural_libraries</code>
+          <name>Cultural Libraries</name>
+          <parent-code>cultural</parent-code>
+        </segment>
+        <segment>
+          <code>cultural_museums_art_galleries</code>
+          <name>Cultural Museums Art Galleries</name>
+          <parent-code>cultural</parent-code>
+        </segment>
+        <segment>
+          <code>cultural_performance_arts</code>
+          <name>Performance Arts</name>
+          <parent-code>cultural</parent-code>
+        </segment>
+        <segment>
+          <code>education</code>
+          <name>Education</name>
+        </segment>
+        <segment>
+          <code>education_colleges_universities</code>
+          <name>Education Colleges &amp; Universities</name>
+          <parent-code>education</parent-code>
+        </segment>
+        <segment>
+          <code>education_k12_schools</code>
+          <name>Education K-12 Schools</name>
+          <parent-code>education</parent-code>
+        </segment>
+        <segment>
+          <code>education_pro_tech_trade_schools</code>
+          <name>Professional, Technical &amp; Trade Schools</name>
+          <parent-code>education</parent-code>
+        </segment>
+        <segment>
+          <code>energy_utilities_and_waste_treatment</code>
+          <name>Energy, Utilities &amp; Waste</name>
+        </segment>
+        <segment>
+          <code>euw_energy</code>
+          <name>Energy</name>
+          <parent-code>energy_utilities_and_waste_treatment</parent-code>
+        </segment>
+        <segment>
+          <code>euw_utilities</code>
+          <name>Utilities</name>
+          <parent-code>energy_utilities_and_waste_treatment</parent-code>
+        </segment>
+        <segment>
+          <code>euw_waste_treatment</code>
+          <name>Waste Treatment</name>
+          <parent-code>energy_utilities_and_waste_treatment</parent-code>
+        </segment>
+        <segment>
+          <code>finance</code>
+          <name>Finance</name>
+        </segment>
+        <segment>
+          <code>finance_banking</code>
+          <name>Banking</name>
+          <parent-code>finance</parent-code>
+        </segment>
+        <segment>
+          <code>finance_creditcards_transaction_processing</code>
+          <name>Credit Card Txn Processing</name>
+          <parent-code>finance</parent-code>
+        </segment>
+        <segment>
+          <code>finance_investing_banking</code>
+          <name>Investment Banking</name>
+          <parent-code>finance</parent-code>
+        </segment>
+        <segment>
+          <code>finance_portfolio_management_financial_advice</code>
+          <name>Portfolio Management &amp; Financial Advice</name>
+          <parent-code>finance</parent-code>
+        </segment>
+        <segment>
+          <code>finance_venture_capital_private_equity</code>
+          <name>Venture Capital Private Equity</name>
+          <parent-code>finance</parent-code>
+        </segment>
+        <segment>
+          <code>government</code>
+          <name>Government</name>
+        </segment>
+        <segment>
+          <code>government_federal</code>
+          <name>Govt Federal</name>
+          <parent-code>government</parent-code>
+        </segment>
+        <segment>
+          <code>government_public_safety</code>
+          <name>Govt Public Safety</name>
+          <parent-code>government</parent-code>
+        </segment>
+        <segment>
+          <code>government_state_province</code>
+          <name>Govt State and Province</name>
+          <parent-code>government</parent-code>
+        </segment>
+        <segment>
+          <code>government_towns_cities_muni</code>
+          <name>Govt Towns &amp; Cities &amp; Munis</name>
+          <parent-code>government</parent-code>
+        </segment>
+        <segment>
+          <code>graphic_design</code>
+          <name>Graphic Design</name>
+          <parent-code>business_services</parent-code>
+        </segment>
+        <segment>
+          <code>healthcare</code>
+          <name>Healthcare</name>
+        </segment>
+        <segment>
+          <code>healthcare_hospitals_clinics</code>
+          <name>Hospitals &amp; Clinics</name>
+          <parent-code>healthcare</parent-code>
+        </segment>
+        <segment>
+          <code>healthcare_medical_offices</code>
+          <name>Medical Offices</name>
+          <parent-code>healthcare</parent-code>
+        </segment>
+        <segment>
+          <code>hospitality</code>
+          <name>Hospitality/Hotels</name>
+        </segment>
+        <segment>
+          <code>hospitality_lodging_resorts</code>
+          <name>Lodging &amp; Resorts</name>
+          <parent-code>hospitality</parent-code>
+        </segment>
+        <segment>
+          <code>hospitality_restaurants</code>
+          <name>Restaurants</name>
+          <parent-code>hospitality</parent-code>
+        </segment>
+        <segment>
+          <code>human_resources_and_staffing</code>
+          <name>HR &amp; Recruiting</name>
+          <parent-code>business_services</parent-code>
+        </segment>
+        <segment>
+          <code>import_export</code>
+          <name>Import Export</name>
+          <parent-code>business_services</parent-code>
+        </segment>
+        <segment>
+          <code>insurance</code>
+          <name>Insurance</name>
+        </segment>
+        <segment>
+          <code>insurance_accident_and_health</code>
+          <name>Insurance Accident and Health</name>
+          <parent-code>insurance</parent-code>
+        </segment>
+        <segment>
+          <code>insurance_property_and_casualty</code>
+          <name>Insurance Property and Casualty</name>
+          <parent-code>insurance</parent-code>
+        </segment>
+        <segment>
+          <code>law_firms_and_legal_services</code>
+          <name>Legal</name>
+        </segment>
+        <segment>
+          <code>manufacturing</code>
+          <name>Manufacturing</name>
+        </segment>
+        <segment>
+          <code>manufacturing_aerospace_and_defense</code>
+          <name>Mfg Aerospace &amp; Defense</name>
+          <parent-code>manufacturing</parent-code>
+        </segment>
+        <segment>
+          <code>manufacturing_automobiles</code>
+          <name>Mfg Automobile</name>
+          <parent-code>manufacturing</parent-code>
+        </segment>
+        <segment>
+          <code>manufacturing_boats_marine</code>
+          <name>Mfg Boats &amp; Marine</name>
+          <parent-code>manufacturing</parent-code>
+        </segment>
+        <segment>
+          <code>manufacturing_building_materials</code>
+          <name>Mfg Bldg Materials</name>
+          <parent-code>manufacturing</parent-code>
+        </segment>
+        <segment>
+          <code>manufacturing_chemicals_gases</code>
+          <name>Mfg Chemicals &amp; Gases</name>
+          <parent-code>manufacturing</parent-code>
+        </segment>
+        <segment>
+          <code>manufacturing_computer_equipment</code>
+          <name>Mfg Computer Equipment</name>
+          <parent-code>manufacturing</parent-code>
+        </segment>
+        <segment>
+          <code>manufacturing_consumer_goods</code>
+          <name>Mfg Consumer Goods</name>
+          <parent-code>manufacturing</parent-code>
+        </segment>
+        <segment>
+          <code>manufacturing_electronics</code>
+          <name>Mfg Electronics</name>
+          <parent-code>manufacturing</parent-code>
+        </segment>
+        <segment>
+          <code>manufacturing_food_beverage</code>
+          <name>Mfg Food &amp; Beverage</name>
+          <parent-code>manufacturing</parent-code>
+        </segment>
+        <segment>
+          <code>manufacturing_furniture</code>
+          <name>Mfg Furniture</name>
+          <parent-code>manufacturing</parent-code>
+        </segment>
+        <segment>
+          <code>manufacturing_machinery</code>
+          <name>Mfg Machinery</name>
+          <parent-code>manufacturing</parent-code>
+        </segment>
+        <segment>
+          <code>manufacturing_metals</code>
+          <name>Mfg Metals</name>
+          <parent-code>manufacturing</parent-code>
+        </segment>
+        <segment>
+          <code>manufacturing_plastics_synthetics_rubber</code>
+          <name>Mfg Plastics, Synthetics &amp; Rubber</name>
+          <parent-code>manufacturing</parent-code>
+        </segment>
+        <segment>
+          <code>manufacturing_semiconductors</code>
+          <name>Mfg Semiconductors</name>
+          <parent-code>manufacturing</parent-code>
+        </segment>
+        <segment>
+          <code>manufacturing_textiles_and_apparel</code>
+          <name>Mfg Textiles and Apparel</name>
+          <parent-code>manufacturing</parent-code>
+        </segment>
+        <segment>
+          <code>manufacturing_tobacco_products</code>
+          <name>Mfg Tobacco Products</name>
+          <parent-code>manufacturing</parent-code>
+        </segment>
+        <segment>
+          <code>manufacturing_wood_and_paper_products</code>
+          <name>Mfg Wood and Paper Products</name>
+          <parent-code>manufacturing</parent-code>
+        </segment>
+        <segment>
+          <code>media_and_internet</code>
+          <name>Media &amp; Internet</name>
+        </segment>
+        <segment>
+          <code>media_broadcasting</code>
+          <name>Media Broadcasting</name>
+          <parent-code>media_and_internet</parent-code>
+        </segment>
+        <segment>
+          <code>media_info_collection_and_delivery</code>
+          <name>Media Info Collection &amp; Delivery</name>
+          <parent-code>media_and_internet</parent-code>
+        </segment>
+        <segment>
+          <code>media_movie_and_video</code>
+          <name>Media Movie and Video</name>
+          <parent-code>media_and_internet</parent-code>
+        </segment>
+        <segment>
+          <code>media_music</code>
+          <name>Media Music</name>
+          <parent-code>media_and_internet</parent-code>
+        </segment>
+        <segment>
+          <code>metals_and_mining</code>
+          <name>Metals &amp; Mining</name>
+          <parent-code>resource_extraction</parent-code>
+        </segment>
+        <segment>
+          <code>newspapers_and_news_services</code>
+          <name>Newspapers &amp; News Services</name>
+          <parent-code>media_and_internet</parent-code>
+        </segment>
+        <segment>
+          <code>non_profit</code>
+          <name>Non-Profit</name>
+        </segment>
+        <segment>
+          <code>non_profit_charitable_orgs_and_foundations</code>
+          <name>Non Profit Charitable Orgs &amp; Foundations</name>
+          <parent-code>non_profit</parent-code>
+        </segment>
+        <segment>
+          <code>non_profit_religious_organizations</code>
+          <name>Religious Orgs</name>
+          <parent-code>non_profit</parent-code>
+        </segment>
+        <segment>
+          <code>oil_and_gas</code>
+          <name>Oil and Gas</name>
+          <parent-code>resource_extraction</parent-code>
+        </segment>
+        <segment>
+          <code>pharmaceuticals</code>
+          <name>Pharmaceuticals</name>
+          <parent-code>healthcare</parent-code>
+        </segment>
+        <segment>
+          <code>publishing</code>
+          <name>Publishing</name>
+          <parent-code>media_and_internet</parent-code>
+        </segment>
+        <segment>
+          <code>real_estate</code>
+          <name>Real Estate</name>
+        </segment>
+        <segment>
+          <code>real_estate_commercial</code>
+          <name>Commercial</name>
+          <parent-code>real_estate</parent-code>
+        </segment>
+        <segment>
+          <code>real_estate_residential</code>
+          <name>Residential</name>
+          <parent-code>real_estate</parent-code>
+        </segment>
+        <segment>
+          <code>resource_extraction</code>
+          <name>Resource Extraction</name>
+        </segment>
+        <segment>
+          <code>retail</code>
+          <name>Retail</name>
+        </segment>
+        <segment>
+          <code>retail_apparel_fashion</code>
+          <name>Retail Fashion</name>
+          <parent-code>retail</parent-code>
+        </segment>
+        <segment>
+          <code>retail_consumer_electronics</code>
+          <name>Retail Consumer Electronics</name>
+          <parent-code>retail</parent-code>
+        </segment>
+        <segment>
+          <code>retail_dept_stores_super_stores</code>
+          <name>Retail Dept Stores &amp; Super Stores</name>
+          <parent-code>retail</parent-code>
+        </segment>
+        <segment>
+          <code>retail_drug_stores_pharmacies</code>
+          <name>Retail Drug Stores &amp; Pharmacies</name>
+          <parent-code>retail</parent-code>
+        </segment>
+        <segment>
+          <code>retail_ecommerce</code>
+          <name>Retail eCommerce</name>
+          <parent-code>retail</parent-code>
+        </segment>
+        <segment>
+          <code>retail_furniture</code>
+          <name>Retail Furniture</name>
+          <parent-code>retail</parent-code>
+        </segment>
+        <segment>
+          <code>retail_gas_stations_convenience</code>
+          <name>Retail Gas Stations &amp; Convenience</name>
+          <parent-code>retail</parent-code>
+        </segment>
+        <segment>
+          <code>retail_grocery</code>
+          <name>Retail Grocery</name>
+          <parent-code>retail</parent-code>
+        </segment>
+        <segment>
+          <code>retail_home_improvement_hardware</code>
+          <name>Retail Home Improvement &amp; Hardware</name>
+          <parent-code>retail</parent-code>
+        </segment>
+        <segment>
+          <code>retail_jewelry</code>
+          <name>Retail Jewelry</name>
+          <parent-code>retail</parent-code>
+        </segment>
+        <segment>
+          <code>retail_motor_vehicles</code>
+          <name>Retail Motor Vehicles</name>
+          <parent-code>retail</parent-code>
+        </segment>
+        <segment>
+          <code>retail_office_products</code>
+          <name>Retail Office Products</name>
+          <parent-code>retail</parent-code>
+        </segment>
+        <segment>
+          <code>retail_pet_products</code>
+          <name>Retail Pet Products</name>
+          <parent-code>retail</parent-code>
+        </segment>
+        <segment>
+          <code>search_engines_internet_portals</code>
+          <name>Search Engines &amp; Internet Portals</name>
+          <parent-code>media_and_internet</parent-code>
+        </segment>
+        <segment>
+          <code>software</code>
+          <name>Software</name>
+        </segment>
+        <segment>
+          <code>software_business_intelligence</code>
+          <name>Software Business Intelligence</name>
+          <parent-code>software</parent-code>
+        </segment>
+        <segment>
+          <code>software_content_and_collaboration</code>
+          <name>Software Content &amp; Collaboration</name>
+          <parent-code>software</parent-code>
+        </segment>
+        <segment>
+          <code>software_crm</code>
+          <name>Software CRM</name>
+          <parent-code>software</parent-code>
+        </segment>
+        <segment>
+          <code>software_custom_software_and_outsourcing</code>
+          <name>Software Custom Software &amp; Outsourcing</name>
+          <parent-code>software</parent-code>
+        </segment>
+        <segment>
+          <code>software_database_and_file_management</code>
+          <name>Software Database &amp; File Management</name>
+          <parent-code>software</parent-code>
+        </segment>
+        <segment>
+          <code>software_erp</code>
+          <name>Software ERP</name>
+          <parent-code>software</parent-code>
+        </segment>
+        <segment>
+          <code>software_financial_legal_hr</code>
+          <name>Software Financial Legal HR</name>
+          <parent-code>software</parent-code>
+        </segment>
+        <segment>
+          <code>software_healthcare</code>
+          <name>Software Healthcare</name>
+          <parent-code>software</parent-code>
+        </segment>
+        <segment>
+          <code>software_networking</code>
+          <name>Software Networking</name>
+          <parent-code>software</parent-code>
+        </segment>
+        <segment>
+          <code>software_security</code>
+          <name>Software Security</name>
+          <parent-code>software</parent-code>
+        </segment>
+        <segment>
+          <code>software_supply_chain_management</code>
+          <name>Software Supply Chain Mgmt</name>
+          <parent-code>software</parent-code>
+        </segment>
+        <segment>
+          <code>sports_recreation_and_gambling</code>
+          <name>Sports Recreation and Gambling</name>
+        </segment>
+        <segment>
+          <code>srg_gambling</code>
+          <name>Gambling</name>
+          <parent-code>sports_recreation_and_gambling</parent-code>
+        </segment>
+        <segment>
+          <code>srg_recreation</code>
+          <name>Recreation</name>
+          <parent-code>sports_recreation_and_gambling</parent-code>
+        </segment>
+        <segment>
+          <code>srg_sports</code>
+          <name>Sports</name>
+          <parent-code>sports_recreation_and_gambling</parent-code>
+        </segment>
+        <segment>
+          <code>telecomm_cable_satellite</code>
+          <name>Telecom Cable Satellite</name>
+          <parent-code>telecommunications</parent-code>
+        </segment>
+        <segment>
+          <code>telecomm_isps</code>
+          <name>Telecom ISPs</name>
+          <parent-code>telecommunications</parent-code>
+        </segment>
+        <segment>
+          <code>telecomm_telephony_and_wireless</code>
+          <name>Telecom Telephony &amp; Wireless</name>
+          <parent-code>telecommunications</parent-code>
+        </segment>
+        <segment>
+          <code>telecommunications</code>
+          <name>Telecom</name>
+        </segment>
+        <segment>
+          <code>transportation</code>
+          <name>Transportation/Travel</name>
+        </segment>
+        <segment>
+          <code>transportation_agencies</code>
+          <name>Transportation Travel Agencies and Reservation Services</name>
+          <parent-code>transportation</parent-code>
+        </segment>
+        <segment>
+          <code>transportation_aviation_aerospace</code>
+          <name>Transportation Aviation &amp; Aerospace</name>
+          <parent-code>transportation</parent-code>
+        </segment>
+        <segment>
+          <code>transportation_marine_shipping</code>
+          <name>Transportation Marine Shipping</name>
+          <parent-code>transportation</parent-code>
+        </segment>
+        <segment>
+          <code>transportation_transit_passenger</code>
+          <name>Transportation Transit &amp; Non-Aviation Passenger</name>
+          <parent-code>transportation</parent-code>
+        </segment>
+        <segment>
+          <code>transportation_trucking_and_logistics</code>
+          <name>Transportation Trucking &amp; Logistics</name>
+          <parent-code>transportation</parent-code>
+        </segment>
+        <segment>
+          <code>transportation_warehousing</code>
+          <name>Transportation Warehousing</name>
+          <parent-code>transportation</parent-code>
+        </segment>
+        <segment>
+          <code>waste_management</code>
+          <name>Waste Management</name>
+          <parent-code>business_services</parent-code>
+        </segment>
+        <segment>
+          <code>wholesalers</code>
+          <name>Wholesalers</name>
+        </segment>
+        <segment>
+          <code>wholesalers_durable</code>
+          <name>Wholesalers Durable Goods</name>
+          <parent-code>wholesalers</parent-code>
+        </segment>
+        <segment>
+          <code>wholesalers_non_durable</code>
+          <name>Wholesalers Non-Durable Goods</name>
+          <parent-code>wholesalers</parent-code>
+        </segment>
+      </industry>
+      <location>
+        <segment>
+          <code>alabama</code>
+          <name>USA - Alabama</name>
+        </segment>
+        <segment>
+          <code>alaska</code>
+          <name>USA - Alaska</name>
+        </segment>
+        <segment>
+          <code>arizona</code>
+          <name>USA - Arizona</name>
+        </segment>
+        <segment>
+          <code>arkansas</code>
+          <name>USA - Arkansas</name>
+        </segment>
+        <segment>
+          <code>california</code>
+          <name>USA - California</name>
+        </segment>
+        <segment>
+          <code>canada</code>
+          <name>Canada</name>
+        </segment>
+        <segment>
+          <code>colorado</code>
+          <name>USA - Colorado</name>
+        </segment>
+        <segment>
+          <code>connecticut</code>
+          <name>USA - Connecticut</name>
+        </segment>
+        <segment>
+          <code>dc</code>
+          <name>USA - D.C.</name>
+        </segment>
+        <segment>
+          <code>delaware</code>
+          <name>USA - Delaware</name>
+        </segment>
+        <segment>
+          <code>florida</code>
+          <name>USA - Florida</name>
+        </segment>
+        <segment>
+          <code>georgia</code>
+          <name>USA - Georgia</name>
+        </segment>
+        <segment>
+          <code>hawaii</code>
+          <name>USA - Hawaii</name>
+        </segment>
+        <segment>
+          <code>idaho</code>
+          <name>USA - Idaho</name>
+        </segment>
+        <segment>
+          <code>illinois</code>
+          <name>USA - Illinois</name>
+        </segment>
+        <segment>
+          <code>indiana</code>
+          <name>USA - Indiana</name>
+        </segment>
+        <segment>
+          <code>international_other</code>
+          <name>International Other</name>
+        </segment>
+        <segment>
+          <code>iowa</code>
+          <name>USA - Iowa</name>
+        </segment>
+        <segment>
+          <code>kansas</code>
+          <name>USA - Kansas</name>
+        </segment>
+        <segment>
+          <code>kentucky</code>
+          <name>USA - Kentucky</name>
+        </segment>
+        <segment>
+          <code>louisiana</code>
+          <name>USA - Louisiana</name>
+        </segment>
+        <segment>
+          <code>maine</code>
+          <name>USA - Maine</name>
+        </segment>
+        <segment>
+          <code>maryland</code>
+          <name>USA - Maryland</name>
+        </segment>
+        <segment>
+          <code>massachusetts</code>
+          <name>USA - Massachusetts</name>
+        </segment>
+        <segment>
+          <code>michigan</code>
+          <name>USA - Michigan</name>
+        </segment>
+        <segment>
+          <code>minnesota</code>
+          <name>USA - Minnesota</name>
+        </segment>
+        <segment>
+          <code>mississippi</code>
+          <name>USA - Mississippi</name>
+        </segment>
+        <segment>
+          <code>missouri</code>
+          <name>USA - Missouri</name>
+        </segment>
+        <segment>
+          <code>montana</code>
+          <name>USA - Montana</name>
+        </segment>
+        <segment>
+          <code>nebraska</code>
+          <name>USA - Nebraska</name>
+        </segment>
+        <segment>
+          <code>nevada</code>
+          <name>USA - Nevada</name>
+        </segment>
+        <segment>
+          <code>new_hampshire</code>
+          <name>USA - New Hampshire</name>
+        </segment>
+        <segment>
+          <code>new_jersey</code>
+          <name>USA - New Jersey</name>
+        </segment>
+        <segment>
+          <code>new_mexico</code>
+          <name>USA - New Mexico</name>
+        </segment>
+        <segment>
+          <code>new_york</code>
+          <name>USA - New York</name>
+        </segment>
+        <segment>
+          <code>north_carolina</code>
+          <name>USA - North Carolina</name>
+        </segment>
+        <segment>
+          <code>north_dakota</code>
+          <name>USA - North Dakota</name>
+        </segment>
+        <segment>
+          <code>ohio</code>
+          <name>USA - Ohio</name>
+        </segment>
+        <segment>
+          <code>oklahoma</code>
+          <name>USA - Oklahoma</name>
+        </segment>
+        <segment>
+          <code>oregon</code>
+          <name>USA - Oregon</name>
+        </segment>
+        <segment>
+          <code>pennsylvania</code>
+          <name>USA - Pennsylvania</name>
+        </segment>
+        <segment>
+          <code>rhode_island</code>
+          <name>USA - Rhode Island</name>
+        </segment>
+        <segment>
+          <code>south_carolina</code>
+          <name>USA - South Carolina</name>
+        </segment>
+        <segment>
+          <code>south_dakota</code>
+          <name>USA - South Dakota</name>
+        </segment>
+        <segment>
+          <code>tennessee</code>
+          <name>USA - Tennessee</name>
+        </segment>
+        <segment>
+          <code>texas</code>
+          <name>USA - Texas</name>
+        </segment>
+        <segment>
+          <code>uk</code>
+          <name>UK</name>
+        </segment>
+        <segment>
+          <code>us</code>
+          <name>USA Other</name>
+        </segment>
+        <segment>
+          <code>utah</code>
+          <name>USA - Utah</name>
+        </segment>
+        <segment>
+          <code>vermont</code>
+          <name>USA - Vermont</name>
+        </segment>
+        <segment>
+          <code>virginia</code>
+          <name>USA - Virginia</name>
+        </segment>
+        <segment>
+          <code>washington</code>
+          <name>USA - Washington</name>
+        </segment>
+        <segment>
+          <code>west_virginia</code>
+          <name>USA - West Virginia</name>
+        </segment>
+        <segment>
+          <code>wisconsin</code>
+          <name>USA - Wisconsin</name>
+        </segment>
+        <segment>
+          <code>wyoming</code>
+          <name>USA - Wyoming</name>
+        </segment>
+      </location>
+      <seniority>
+        <segment>
+          <code>board_member</code>
+          <name>Board Members</name>
+        </segment>
+        <segment>
+          <code>executive</code>
+          <name>Executives</name>
+        </segment>
+        <segment>
+          <code>mid_management</code>
+          <name>Mid-Management</name>
+        </segment>
+        <segment>
+          <code>non_management</code>
+          <name>Non-Management</name>
+        </segment>
+      </seniority>
+    </bizographics>
+  </taxonomy>
+  <usage>0</usage>
+  <third_pc_accepted>unknown</third_pc_accepted>
+</result>
