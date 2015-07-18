@@ -1,0 +1,86 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Sample Personal Info Connector</PackageName>
+      <Author>Adam Conn</Author>
+      <Version>1.0.1</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme>===========================================================
+Sample Personal Info Connector for xDB Ingestion Manager
+===========================================================
+
+-----------------------------------------------------------
+Prerequisites
+-----------------------------------------------------------
+The following modules must be installed before this
+package is installed:
+* xDB Contact Utilities 1.1 (or greater)
+* xDB Ingestion Manager
+* Personal Info Connector for xDB Integration Manager
+
+-----------------------------------------------------------
+About this package
+-----------------------------------------------------------
+This package installs the Sitecore definition items that
+represent a sample configuration of the Personal Info 
+Connector for xDB Integration Manager.
+
+-----------------------------------------------------------
+Configuration instructions
+-----------------------------------------------------------
+After the package is installed you must do the following:
+
+1. Select /sitecore/system/Modules/xDB Ingestion Manager/Data Readers/File System Data Reader
+2. For the "Data file path" field enter the location of
+   the data file.
+3. Publish site
+4. Use the following URL to trigger the push handler:
+   http://[YOUR SITECORE SERVER/-/push/personal
+</Readme>
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/system/Modules/xDB Ingestion Manager/Data Hydrators/Contact Personal Info Hydrator/{F7362155-FA24-4BFE-A4D7-5512B8C2DC59}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/xDB Ingestion Manager/Data Readers/File System Data Reader/{E7DB854D-76CC-49E7-9315-1A329732AD5A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/xDB Ingestion Manager/Data Readers/Query String Data Reader/{074DF71D-011F-48D1-93E7-99125D7461CB}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/xDB Ingestion Manager/Pull Data Handlers/Personal Info Pull Data Handler/{F516797A-018D-4D79-AD74-562820DA65E0}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/xDB Ingestion Manager/Push Data Handlers/Personal Info Push Data Handler/{BE273122-8E23-4F53-9614-582D8746A61B}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>items</Name>
+    </xitems>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>

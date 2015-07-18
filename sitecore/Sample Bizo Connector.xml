@@ -1,0 +1,99 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Sample Bizo Connector</PackageName>
+      <Author>Adam Conn</Author>
+      <Version>1.0.1</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme>===========================================================
+Sample Bizo Connector for xDB Ingestion Manager
+===========================================================
+
+-----------------------------------------------------------
+Prerequisites
+-----------------------------------------------------------
+The following modules must be installed before this
+package is installed:
+* xDB Contact Utilities 1.1 (or greater)
+* xDB Ingestion Manager
+* Bizo Connector for xDB Integration Manager
+
+-----------------------------------------------------------
+About this package
+-----------------------------------------------------------
+This package installs the Sitecore definition items that
+represent a sample configuration of the Bizo Connector
+for xDB Integration Manager.
+
+-----------------------------------------------------------
+Configuration instructions
+-----------------------------------------------------------
+Publish the site after installing this package.
+
+Add the following Javascript to your Sitecore page in 
+order to trigger the data push from Bizo:
+
+&lt;!-- START Bizo push code --&gt;
+&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+var bizoApiKey = '[YOUR BIZO API KEY]';
+var sitecoreCallbackUrl = 'http://[YOUR SITECORE SERVER]/-/push/bizo';
+$(document).ready(function(){
+    $.ajax({
+        url: 'http://api.bizographics.com/v4/profile.redirect',
+        data: { 
+            api_key: bizoApiKey, 
+            callback_url: sitecoreCallbackUrl 
+        },
+        type: 'GET',
+        dataType: 'jsonp',
+        success: function (data) { }
+    });
+});
+&lt;/script&gt;
+&lt;!-- END Bizo push code --&gt;</Readme>
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/system/Modules/xDB Ingestion Manager/Data Hydrators/Bizo Redirect Data Hydrator/{4BC3715B-3A50-4C50-B03F-38F8AE6A61AC}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/xDB Ingestion Manager/Data Readers/Bizo Redirect Data Reader/{2CD04D99-B89F-45D0-A985-5DE5DFCAF219}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/xDB Ingestion Manager/Push Data Handlers/Bizo Redirect Push Data Handler/{88C0FB36-2494-4E35-9034-82DFC71CA1C9}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>items</Name>
+    </xitems>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>

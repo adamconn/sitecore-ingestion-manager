@@ -1,0 +1,125 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Bizo Connector for xDB Ingestion Manager</PackageName>
+      <Author>Adam Conn</Author>
+      <Version>1.0.1</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme>===========================================================
+Bizo Connector for xDB Ingestion Manager
+===========================================================
+
+-----------------------------------------------------------
+Prerequisites
+-----------------------------------------------------------
+The following modules must be installed before this
+package is installed:
+* xDB Contact Utilities 1.1 (or greater)
+* xDB Ingestion Manager
+
+-----------------------------------------------------------
+About this connector
+-----------------------------------------------------------
+The Bizo Redirect API pushes data to a URL through a
+HTTP redirect. Javascript is used to send a request to
+Bizo. The response from Bizo uses the 302 status code
+to redirect to a URL that can read the data.
+
+In this case the URL is a Sitecore URL. A Push Data 
+Handler is triggered when this Sitecore URL is 
+processed.
+
+-----------------------------------------------------------
+Configuration instructions
+-----------------------------------------------------------
+After the package is installed you must add a Push Data 
+Handler definition item in Sitecore. This is the component
+that is responsible for reading data from Bizo and updating 
+the contact facet.
+
+1. Select /sitecore/system/Modules/xDB Ingestion Manager/Data Hydrators
+2. Add a new item using the template "Contact Facet Hydrator"
+3. For the "Contact facet to hydrate" field select the 
+   contact facet "BizoData"
+4. For the "IHydrator type" field specify the type "Sitecore.Strategy.Xdb.Ingest.Bizo.Hydrators.BizoRedirectHydrator,Sitecore.Strategy.Xdb.Ingest.Bizo"
+5. Select /sitecore/system/Modules/xDB Ingestion Manager/Data Readers
+6. Add a new item using the template "Query String Data Reader"
+7. Select /sitecore/system/Modules/xDB Ingestion Manager/Push Data Handlers
+8. Add a new item using the template "Push Data Handler"
+9. For the "Handler name from URL" field enter "bizo"
+10. For the "Data reader" field select the item from step 6
+11. For the "Data hydrator" field select the item from step 8
+12. Clear the Sitecore cache (this is needed in order for 
+    the data provider to pick up the new contact facet)
+13. Publish site
+
+-----------------------------------------------------------
+Javascript to trigger the push handler
+-----------------------------------------------------------
+Add the following Javascript code to a rendering or a 
+layout. Be sure to change the variables for the Bizo
+API key and the Sitecore callback URL:
+
+&lt;!-- START Bizo push code --&gt;
+&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+var bizoApiKey = '[YOUR BIZO API KEY]';
+var sitecoreCallbackUrl = 'http://[YOUR SITECORE SERVER]/-/push/bizo';
+$(document).ready(function(){
+    $.ajax({
+        url: 'http://api.bizographics.com/v4/profile.redirect',
+        data: { 
+            api_key: bizoApiKey, 
+            callback_url: sitecoreCallbackUrl 
+        },
+        type: 'GET',
+        dataType: 'jsonp',
+        success: function (data) { }
+    });
+});
+&lt;/script&gt;
+&lt;!-- END Bizo push code --&gt;</Readme>
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xfiles>
+      <Entries>
+        <x-item>/bin/Sitecore.Strategy.Xdb.Ingest.Bizo.dll</x-item>
+        <x-item>/App_Config/Include/Sitecore.Strategy.Xdb.Ingest.Bizo.config</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>files</Name>
+    </xfiles>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>

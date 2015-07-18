@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="..\SitecoreReferences\Sitecore.Reference.Path.xml" Condition="Exists('..\SitecoreReferences\Sitecore.Reference.Path.xml')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -40,15 +41,19 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json">
-      <HintPath>C:\Sitecore\sc75\Website\bin\Newtonsoft.Json.dll</HintPath>
+      <HintPath>$(SitecoreLibDir)Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Analytics.Model">
-      <HintPath>C:\Sitecore\sc75\Website\bin\Sitecore.Analytics.Model.dll</HintPath>
+      <HintPath>$(SitecoreLibDir)Sitecore.Analytics.Model.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel">
-      <HintPath>c:\Sitecore\sc75\Website\bin\Sitecore.Kernel.dll</HintPath>
+      <HintPath>$(SitecoreLibDir)Sitecore.Kernel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Strategy.Contacts">
+      <HintPath>$(SitecoreLibDir)Sitecore.Strategy.Contacts.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
@@ -69,15 +74,19 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Config\DemandbaseTaxonomy.cs" />
     <Compile Include="Items\DemandbaseDataReaderItem.cs" />
     <Compile Include="Items\DemandbaseFieldIDs.cs" />
     <Compile Include="Items\DemandbaseTemplateIDs.cs" />
     <Compile Include="Models\DemandbaseData.cs" />
     <Compile Include="Models\IDemandbaseData.cs" />
+    <Compile Include="Pipelines\GetFacetMemberValues.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Sitecore.Strategy.Xdb.Ingest.Demandbase.config" />
+    <Content Include="App_Config\Include\Sitecore.Strategy.Xdb.Ingest.Demandbase.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -92,6 +101,7 @@
       <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
