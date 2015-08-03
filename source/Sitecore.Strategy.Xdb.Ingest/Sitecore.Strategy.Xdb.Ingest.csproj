@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="..\SitecoreReferences\Sitecore.Reference.Path.xml" Condition="Exists('..\SitecoreReferences\Sitecore.Reference.Path.xml')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -41,27 +42,31 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Sitecore\sc75\Website\bin\Newtonsoft.Json.dll</HintPath>
+      <HintPath>$(SitecoreLibDir)Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Analytics">
-      <HintPath>C:\Sitecore\sc75\Website\bin\Sitecore.Analytics.dll</HintPath>
+      <HintPath>$(SitecoreLibDir)Sitecore.Analytics.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Analytics.Model">
-      <HintPath>C:\Sitecore\sc75\Website\bin\Sitecore.Analytics.Model.dll</HintPath>
+      <HintPath>$(SitecoreLibDir)Sitecore.Analytics.Model.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.ContentSearch">
-      <HintPath>C:\Sitecore\sc75\Website\bin\Sitecore.ContentSearch.dll</HintPath>
+      <HintPath>$(SitecoreLibDir)Sitecore.ContentSearch.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.ContentSearch.Linq">
-      <HintPath>C:\Sitecore\sc75\Website\bin\Sitecore.ContentSearch.Linq.dll</HintPath>
+      <HintPath>$(SitecoreLibDir)Sitecore.ContentSearch.Linq.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel">
-      <HintPath>C:\Sitecore\sc75\Website\bin\Sitecore.Kernel.dll</HintPath>
+      <HintPath>$(SitecoreLibDir)Sitecore.Kernel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Strategy.Contacts">
+      <HintPath>$(SitecoreLibDir)Sitecore.Strategy.Contacts.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
@@ -132,13 +137,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\PublishProfiles\sc75.pubxml" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Sitecore.Strategy.Contacts\Sitecore.Strategy.Contacts\Sitecore.Strategy.Contacts.csproj">
-      <Project>{01946754-56f6-438f-92bb-fad19c054d30}</Project>
-      <Name>Sitecore.Strategy.Contacts</Name>
-      <Private>False</Private>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

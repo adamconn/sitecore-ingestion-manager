@@ -1,0 +1,141 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Demandbase Connector for xDB Ingestion Manager</PackageName>
+      <Author>Adam Conn</Author>
+      <Version>1.0.1</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme>===========================================================
+Demandbase Connector for xDB Ingestion Manager
+===========================================================
+
+-----------------------------------------------------------
+Prerequisites
+-----------------------------------------------------------
+The following modules must be installed before this
+package is installed:
+* xDB Contact Utilities 1.1 (or greater)
+* xDB Ingestion Manager
+
+-----------------------------------------------------------
+About this connector
+-----------------------------------------------------------
+For the first request in a session a call is made to 
+Demandbase to perform a lookup using the visitor's
+IP address.
+
+If Demandbase has data for the IP address this data is 
+set on the contact facet named "DemandbaseData". This 
+contact facet is created when this connector is installed.
+
+-----------------------------------------------------------
+Configuration instructions
+-----------------------------------------------------------
+After the package is installed you must add a Pull Data 
+Handler definition item in Sitecore. This is the component 
+that is responsible for reading data from Demandbase and 
+updating the contact facet.
+
+1. Select /sitecore/system/Modules/xDB Ingestion Manager/Data Hydrators
+2. Add a new item using the template "Contact Facet Hydrator"
+3. For the "Contact facet to hydrate" field select the 
+   contact facet "DemandbaseData"
+4. For the "IHydrator type" field specify the type "Sitecore.Strategy.Xdb.Ingest.Hydrators.ObjectHydratorFromJson,Sitecore.Strategy.Xdb.Ingest"
+5. Select /sitecore/system/Modules/xDB Ingestion Manager/Data Readers
+6. Add a new item using the template "Demandbase Data Reader"
+7. For the "Demandbase API key" field enter your Demand API key
+8. Select /sitecore/system/Modules/xDB Ingestion Manager/Pull Data Handlers
+9. Add a new item using the template "Pull Data Handler"
+10. For the "Data reader" field select the item from step 6
+11. For the "Data hydrator" field select the item from step 9
+12. Clear the Sitecore cache (this is needed in order for 
+    the data provider to pick up the new contact facet)
+13. Publish site
+</Readme>
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/system/Settings/Rules/Insert Options/Rules/Data Readers for Demandbase/{1440C3AD-3549-4498-87DD-A9C0E044B4D7}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>insert option rules</Name>
+    </xitems>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Demandbase/{B7ABB949-4E15-45BA-B532-DC09E0AC220E}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Demandbase/Demandbase Data Reader/__Standard Values/{5467FA06-1356-41A4-972D-F7951A892AEE}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Demandbase/Demandbase Data Reader/{957158FA-8150-4315-8041-A136FC262974}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Demandbase/Demandbase Data Reader/Connection/{90E2D594-BC4E-44F1-8362-B24674A2FCC6}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Demandbase/Demandbase Data Reader/Connection/ApiKey/{4BD95304-1C81-487B-939A-866246DEB410}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Demandbase/Demandbase Data Reader/Overrides/{2D0A13C5-B694-48E8-83E4-8CA4F84A382D}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Demandbase/Demandbase Data Reader/Overrides/IpAddressMappings/{A794BA76-30D7-4A60-A4D0-61F07A956340}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>templates</Name>
+    </xitems>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/Sitecore.Strategy.Xdb.Ingest.Demandbase.config</x-item>
+        <x-item>/bin/Sitecore.Strategy.Xdb.Ingest.Demandbase.dll</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>files</Name>
+    </xfiles>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>

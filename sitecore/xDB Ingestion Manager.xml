@@ -1,0 +1,174 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>xDB Ingestion Manager</PackageName>
+      <Author>Adam Conn</Author>
+      <Version>1.0.1</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme>===========================================================
+xDB Ingestion Manager
+===========================================================
+
+-----------------------------------------------------------
+Prerequisites
+-----------------------------------------------------------
+The following modules must be installed before this
+package is installed:
+* xDB Contact Utilities 1.1 (or greater)
+
+-----------------------------------------------------------
+About this module
+-----------------------------------------------------------
+This module is a framework that facilitates the ingestion
+of third-party data into xDB.
+
+The module includes 2 types of ingestion: pull and push.
+
+Pull means that Sitecore requests data from a third-party
+system.  For the first request in a session this module
+runs all of the active pull handlers that are configured
+under /sitecore/system/Modules/xDB Ingestion Manager/Pull Data Handlers
+
+Push means that the third-party system sends data to 
+Sitecore. When data is pushed to Sitecore it is pushed 
+to a service. In addition to the data being pushed to 
+Sitecore, the name of the push handler is also passed.
+
+Push handlers are configured under /sitecore/system/Modules/xDB Ingestion Manager/Push Data Handlers
+
+Push handlers are run when the first request in a session 
+a call is handled.</Readme>
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/system/Modules/xDB Ingestion Manager/{AEDA00D5-E6A5-474D-AFF2-0B62DF24AB27}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/xDB Ingestion Manager/Data Hydrators/{05E75162-5532-4130-918F-79FC09BBE352}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/xDB Ingestion Manager/Data Readers/{D0DE715F-55E4-4691-9E57-3A74DB4F4C7F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/xDB Ingestion Manager/Pull Data Handlers/{BD7A24C1-AD57-437D-9123-09C56F02980C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/xDB Ingestion Manager/Push Data Handlers/{8C55D0AA-D721-489C-9676-64AC96EF19E9}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Insert Options/Rules/Data Hydrators/{AB7A5229-2127-48B3-8BF1-7F07B3B7047E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Insert Options/Rules/Data Readers/{6BD0B2DA-AC1E-47CE-A2A1-5A632F050AAF}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Insert Options/Rules/Pull Data Handlers/{00428407-0302-45E9-BBE9-95B29298C9DB}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Insert Options/Rules/Push Data Handlers/{6CD20F9F-F99B-4BF1-96D3-94B277BFE2F2}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>module items and insert option rules</Name>
+    </xitems>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/{8292B5C8-E657-45BE-9B8D-D44F728C18C5}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Base Data Hydrator/{7AAB8E98-A372-45B2-8F87-B415B74B403C}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Base Data Hydrator/Data/{374EF137-8018-4D7A-B4B4-6C369EB9AB8C}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Base Data Hydrator/Data/Type/{90C9A183-C7A5-4C0E-94C8-EC4903E309BF}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Base Data Reader/{4FDDC19E-C79B-45E5-BFB4-706BF5FA00BC}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Base Data Reader/Data/{329243F2-6DA4-41B8-8689-2E35A3189294}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Base Data Reader/Data/CustomItemType/{488A28E4-909B-495E-BC9E-BFD9ABBD11D0}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Base Data Reader/Data/ReaderType/{2C579CE5-4895-4F78-A6A0-48977A705E40}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Contact Facet Hydrator/{5AAE3016-3365-4FC6-8749-D199926A8559}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Contact Facet Hydrator/Data/{CD706EEB-7272-49B7-B1F1-75FB17C6AA3E}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Contact Facet Hydrator/Data/ContactFacet/{5C9576A3-0F29-4D5B-854E-4CA9BEEBDC54}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/File System Data Reader/__Standard Values/{02B31198-BA7C-4858-B03B-251CBB121B05}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/File System Data Reader/{2E9015D5-8796-410E-BD68-DA00EBE7BF84}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/File System Data Reader/Data/{CED08622-8385-4907-A093-C27DAFD3FA0C}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/File System Data Reader/Data/FilePath/{4C502DEA-257E-49A7-A948-31D9171B1A27}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Ingestion Data Handler/__Standard Values/{C5461F9C-8EEE-4D3B-9523-BEE039A4A5A2}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Ingestion Data Handler/{BD988F63-33C1-48EE-AB20-530097B750EF}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Ingestion Data Handler/Data/{6AFFBEE5-D045-4B1B-8AF5-EBCE98F79C95}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Ingestion Data Handler/Data/ApplyNullValues/{71C37955-277D-4EED-BF98-C674FC3F93C6}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Ingestion Data Handler/Data/DataHydrator/{2DCE1276-D4C3-4635-BE62-EA59BF68A124}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Ingestion Data Handler/Data/DataReader/{B5A852A2-35CD-462A-BC32-1527988CF96C}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Ingestion Data Handler/Data/Disabled/{00617E56-FE68-4130-8D9E-830BCD693840}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Json Data Reader/{B1E3568B-B0A4-4154-BE1F-B32F20E6B6A7}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Json Data Reader/Data/{9CD034E8-1C80-4893-B9FD-6816867CFC83}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Json Data Reader/Data/Endpoint/{9FDB4D9E-0028-484A-B643-C38151C7A764}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Json Data Reader/OAuth/{4C4A6BBD-4290-4F8F-ACD5-0BB93E01A3D8}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Json Data Reader/OAuth/OAuthKey/{9219E94A-1E2C-4EE5-B86C-3C7C0D0F2C17}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Json Data Reader/OAuth/OAuthSecret/{C99A27B4-901B-4BDE-93FF-EC51BFB47257}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Json Data Reader/OAuth/UseOAuth/{026F1C73-3C9B-4BCB-9B27-C766BB39FC8C}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Pull Data Handler/{392A0004-6D2D-4400-8A60-6040D4FD87EA}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Pull Data Handler/Data/{766A54AC-6303-4D78-B742-A34D290243A2}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Push Data Handler/{2C7DF4D0-7562-4142-B186-478F14FB1083}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Push Data Handler/Data/{602FCBD2-207B-47D0-A162-3D4EB407254E}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Push Data Handler/Data/HandlerName/{2C06533B-C1EC-42EB-B1C9-AD001E40BD58}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Query String Data Reader/__Standard Values/{D741591B-9E91-40A2-8F65-EB3A69C1E50D}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Query String Data Reader/{9F70979C-7951-4F99-A213-80D0FDFEC9A3}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/xDB Ingestion Manager/Query String Data Reader/Data/{C6D8CB30-AA01-49E1-A631-E1D03C80C293}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>templates</Name>
+    </xitems>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/Sitecore.Strategy.Xdb.Ingest.config</x-item>
+        <x-item>/bin/Sitecore.Strategy.Xdb.Ingest.dll</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>files</Name>
+    </xfiles>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>

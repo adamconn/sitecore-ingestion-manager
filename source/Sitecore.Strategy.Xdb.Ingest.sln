@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Strategy.Xdb.Ingest", "Sitecore.Strategy.Xdb.Ingest\Sitecore.Strategy.Xdb.Ingest.csproj", "{DD7F4CFC-1E8E-4B27-9AF8-2422F0EFC469}"
 EndProject
@@ -9,11 +9,26 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Strategy.Xdb.Inges
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Strategy.Xdb.Ingest.Tests", "Sitecore.Strategy.Xdb.Ingest.Tests\Sitecore.Strategy.Xdb.Ingest.Tests.csproj", "{D8C8ACF6-ABD1-451F-A9B0-743CF0B5F3DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Strategy.Contacts", "..\Sitecore.Strategy.Contacts\Sitecore.Strategy.Contacts\Sitecore.Strategy.Contacts.csproj", "{01946754-56F6-438F-92BB-FAD19C054D30}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Strategy.Xdb.Ingest.Demandbase", "Sitecore.Strategy.Xdb.Ingest.Demandbase\Sitecore.Strategy.Xdb.Ingest.Demandbase.csproj", "{538A4565-DCBC-4799-A200-F1F1D6A862C1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Strategy.Xdb.Ingest.Samples", "Sitecore.Strategy.Xdb.Ingest.Samples\Sitecore.Strategy.Xdb.Ingest.Samples.csproj", "{582E0DBD-4030-41B1-8D0A-8A4E9AA3C358}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SitecoreReferences", "SitecoreReferences", "{1648D9D6-7781-4D0B-BA43-BF259B3B9920}"
+	ProjectSection(SolutionItems) = preProject
+		SitecoreReferences\README.txt = SitecoreReferences\README.txt
+		SitecoreReferences\Sitecore.Reference.Path.xml = SitecoreReferences\Sitecore.Reference.Path.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{188FF3D5-A355-4BBC-82EB-310D369A3087}"
+	ProjectSection(SolutionItems) = preProject
+		SitecoreReferences\Lib\Sitecore.Analytics.dll = SitecoreReferences\Lib\Sitecore.Analytics.dll
+		SitecoreReferences\Lib\Sitecore.Analytics.Model.dll = SitecoreReferences\Lib\Sitecore.Analytics.Model.dll
+		SitecoreReferences\Lib\Sitecore.ContentSearch.dll = SitecoreReferences\Lib\Sitecore.ContentSearch.dll
+		SitecoreReferences\Lib\Sitecore.ContentSearch.Linq.dll = SitecoreReferences\Lib\Sitecore.ContentSearch.Linq.dll
+		SitecoreReferences\Lib\Sitecore.Kernel.dll = SitecoreReferences\Lib\Sitecore.Kernel.dll
+		SitecoreReferences\Lib\Sitecore.Strategy.Adaptive.dll = SitecoreReferences\Lib\Sitecore.Strategy.Adaptive.dll
+		SitecoreReferences\Lib\Sitecore.Strategy.Contacts.dll = SitecoreReferences\Lib\Sitecore.Strategy.Contacts.dll
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +48,6 @@ Global
 		{D8C8ACF6-ABD1-451F-A9B0-743CF0B5F3DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8C8ACF6-ABD1-451F-A9B0-743CF0B5F3DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8C8ACF6-ABD1-451F-A9B0-743CF0B5F3DF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{01946754-56F6-438F-92BB-FAD19C054D30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{01946754-56F6-438F-92BB-FAD19C054D30}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{01946754-56F6-438F-92BB-FAD19C054D30}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{01946754-56F6-438F-92BB-FAD19C054D30}.Release|Any CPU.Build.0 = Release|Any CPU
 		{538A4565-DCBC-4799-A200-F1F1D6A862C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{538A4565-DCBC-4799-A200-F1F1D6A862C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{538A4565-DCBC-4799-A200-F1F1D6A862C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -48,5 +59,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{188FF3D5-A355-4BBC-82EB-310D369A3087} = {1648D9D6-7781-4D0B-BA43-BF259B3B9920}
 	EndGlobalSection
 EndGlobal

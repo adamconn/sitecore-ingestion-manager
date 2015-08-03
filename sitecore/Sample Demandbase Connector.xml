@@ -1,0 +1,83 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Sample Demandbase Connector</PackageName>
+      <Author>Adam Conn</Author>
+      <Version>1.0.1</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme>===========================================================
+Sample Demandbase Connector for xDB Ingestion Manager
+===========================================================
+
+-----------------------------------------------------------
+Prerequisites
+-----------------------------------------------------------
+The following modules must be installed before this
+package is installed:
+* xDB Contact Utilities 1.1 (or greater)
+* xDB Ingestion Manager
+* Demandbase Connector for xDB Integration Manager
+
+-----------------------------------------------------------
+About this package
+-----------------------------------------------------------
+This package installs the Sitecore definition items that
+represent a sample configuration of the Demandbase 
+Connector for xDB Integration Manager.
+
+-----------------------------------------------------------
+Configuration instructions
+-----------------------------------------------------------
+After the package is installed you must specify your
+Demandbase API key.
+
+1. Select /sitecore/system/Modules/xDB Ingestion Manager/Data Readers/Sample Demandbase Data Reader
+2. For the "Demandbase API key" field enter your Demandbase
+API key
+3. Publish site
+</Readme>
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/system/Modules/xDB Ingestion Manager/Data Hydrators/Demandbase Data Hydrator/{F191949A-D916-47C8-A067-9E15B56E6C24}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/xDB Ingestion Manager/Data Readers/Test Demandbase Data Reader/{0217B999-BAB3-4031-AB59-762429A33F71}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/xDB Ingestion Manager/Pull Data Handlers/Test Demandbase Pull Data Handler/{EC0EFF76-7166-4DCD-8942-D799DBD156CC}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>items</Name>
+    </xitems>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>
